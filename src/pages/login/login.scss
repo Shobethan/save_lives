@@ -8,14 +8,32 @@ page-login {
     background-size: 70px;
   }
 
-  #login-form {
+  #fb-login {
     border-radius: 40px 40px 0 0;
     background: color($colors, white);
     width: auto;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    z-index: 20;
+  }
+
+  #login-form {
+    background: color($colors, white);
+    width: auto;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    z-index: 19;
   }
 
 }
