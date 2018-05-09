@@ -20,17 +20,31 @@
     <ion-row justify-content-center style="height: 100%;">
       <ion-col col-12 justify-content-center>
         <ion-item no-padding>
-          <ion-label color="primary" floating>Email:</ion-label>
+          <ion-label color="primary" stacked>Email:</ion-label>
           <ion-input type="email" clearInput></ion-input>
         </ion-item>
         <ion-item no-padding>
-          <ion-label color="primary" floating>Password:</ion-label>
+          <ion-label color="primary" stacked>Password:</ion-label>
           <ion-input type="password" clearInput></ion-input>
         </ion-item>
-        <button ion-button block round strong style="filter: drop-shadow(0px 5px 10px #ff6f57); margin-top: 30px;">LOGIN</button>
+
+        <ion-row>
+          <ion-col col-6 no-padding>
+            <ion-item no-padding>
+              <ion-label no-lines style="font-size: 14px;">Remember Me</ion-label>
+              <ion-checkbox checked="false"></ion-checkbox>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6 no-padding>
+            <ion-item no-padding>
+              <ion-label style="font-size: 14px; text-align: right; margin: 0px;" no-padding><a href="" style="text-decoration: none;">Forgot password?</a></ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <button ion-button block strong (click)="login()" style="filter: drop-shadow(0px 5px 10px #ff6f57); margin-top: 30px;">LOGIN</button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <!--<button ion-button block large strong (click)="login()">LOGIN</button>-->
 </ion-content>

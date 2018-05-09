@@ -1,3 +1,39 @@
 page-signup {
 
+  #signup {
+    background: color($colors, bgcolor);
+    background-image: url("../../assets/imgs/app_top_deco.png");
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-size: 70px;
+  }
+
+  #fb-signup {
+    border-radius: 40px 40px 0 0;
+    background: color($colors, white);
+    width: auto;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    z-index: 20;
+  }
+
+  #signup-form {
+    background: color($colors, white);
+    width: auto;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    z-index: 19;
+  }
+
 }

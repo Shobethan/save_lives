@@ -12,14 +12,11 @@ import { EventsPage } from '../pages/events/events';
 import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
 
-
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Keyboard } from '@ionic-native/keyboard';
 
 @NgModule({
   declarations: [
@@ -31,9 +28,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EventsPage,
     ProfilePage,
     SettingsPage,
-    AboutPage,
-    ContactPage,
-    HomePage,
     TabsPage
   ],
   imports: [
@@ -50,14 +44,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EventsPage,
     ProfilePage,
     SettingsPage,
-    AboutPage,
-    ContactPage,
-    HomePage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Keyboard,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
