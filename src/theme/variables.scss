@@ -38,8 +38,11 @@ $colors: (
   blue:       #79a7ff,
   fb-blue:    #3b5999,
   green:      #33d48f,
+  brown:      #ff9579,
+  purple:     #b094ff,
   white:      #ffffff,
   gray-eee:   #eeeeee,
+  gray-aaa:   #aaaaaa,
   bgcolor:    #fff0ee,
   danger:     #f53d3d,
   light:      #f4f4f4,
@@ -91,5 +94,41 @@ $toolbar-background: color($colors, primary);
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+//@import "roboto";
+//@import "noto-sans";
+
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/ProximaNova/400/PN Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../assets/fonts/ProximaNova/700/PN Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: extrabold;
+  font-weight: 800;
+  src: url('../assets/fonts/ProximaNova/800/PN Extrabold.otf') format("opentype");
+}
+
+$font-family-ios-base: 'Proxima Nova';
+$font-family-md-base: 'Proxima Nova';
+$font-family-wp-base: 'Proxima Nova';
+
+body {
+  font-family: 'Proxima Nova' !important;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-family: 'Proxima Nova' !important;
+  font-weight: 800 !important;
+}
