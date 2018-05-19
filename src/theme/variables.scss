@@ -107,6 +107,13 @@ $toolbar-background: color($colors, primary);
 
 @font-face {
   font-family: 'Proxima Nova';
+  font-style: semibold;
+  font-weight: 600;
+  src: url('../assets/fonts/ProximaNova/600/PN Semibold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
   font-style: bold;
   font-weight: 700;
   src: url('../assets/fonts/ProximaNova/700/PN Bold.otf') format("opentype");
@@ -125,10 +132,15 @@ $font-family-wp-base: 'Proxima Nova';
 
 body {
   font-family: 'Proxima Nova' !important;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-h1, h2 {
+h1 {
   font-family: 'Proxima Nova' !important;
   font-weight: 800 !important;
+}
+
+h2 {
+  font-family: 'Proxima Nova' !important;
+  font-weight: 700 !important;
 }

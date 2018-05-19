@@ -1,3 +1,26 @@
 page-profile {
 
+  #profile {
+    background: color($colors, bgcolor);
+  }
+
+  .profile_cover {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .profile_dp {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #ffffff;
+    filter: drop-shadow(0px 5px 10px #ffa393) !important;
+  }
+
 }
